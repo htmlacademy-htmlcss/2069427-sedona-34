@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -31,12 +32,13 @@
           <span class="visually-hidden">Избранное</span>
         </li>
         <li class="navigation-item">
-          <button type="button">Хочу сюда!</button>
+          <button class="button-sedona">Хочу сюда!</button>
         </li>
         </ul>
         </nav>
       </header>
       <main class="main-inner">
+        <div class="hotels-sedona">
         <header class="inner-header">
         <h1 class="inner-heaser-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -50,7 +52,7 @@
         </li>
         </ul>
         </header>
-        <section class="caralog-hotels">
+        <section class="catalog-hotels">
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
@@ -120,9 +122,12 @@
                 </div>
               </div>
             </fieldset>
-            <button class="button" type="submit">Применить</button>
+            <button class="button-apply" type="submit">Применить</button>
             <button class="button" type="reset">Сбросить</button>
           </form>
+        </section>
+      </div>
+        <section>
           <p class="found-hostels">Найдено гостиниц: 38</p>
           <details>
             <summary>Сортировка</summary>
@@ -148,8 +153,8 @@
                 <p class="hostels-card-type">Гостиница</p>
                 <p class="product-card-price">От 4000 ₽</p>
                 <a class="product-card-button" href="#">Подробнее</a>
-                <a class="product-card-button button" href="#">В избранное</a>
-                <p class="product-card-button rating">Рейтинг: 8,5</p>
+                <a class="product-card-button-favorites" href="#">В избранное</a>
+                <p class="product-card-button-rating">Рейтинг: 8,5</p>
               </li>
               <li class="hotels-card">
                 <a class="hotels-card-link" href="#">
@@ -159,8 +164,8 @@
                 <p class="hostels-card-type">Гостиница</p>
                 <p class="product-card-price">От 5000 ₽</p>
                 <a class="product-card-button" href="#">Подробнее</a>
-                <a class="product-card-button button" href="#">В избранном</a>
-                <p class="product-card-button rating">Рейтинг: 9,2</p>
+                <a class="product-card-favorites" href="#">В избранном</a>
+                <p class="product-card-button-rating">Рейтинг: 9,2</p>
               </li>
               <li class="hotels-card">
                 <a class="hotels-card-link" href="#">
@@ -170,8 +175,8 @@
                 <p class="hostels-card-type">Гостиница</p>
                 <p class="product-card-price">От 2500 ₽</p>
                 <a class="product-card-button" href="#">Подробнее</a>
-                <a class="product-card-button button" href="#">В избранное</a>
-                <p class="product-card-button rating">Рейтинг: 6,9</p>
+                <a class="product-card-button-favorites" href="#">В избранное</a>
+                <p class="product-card-button-rating">Рейтинг: 6,9</p>
               </li>
               <li class="hotels-card">
                 <a class="hotels-card-link" href="#">
@@ -181,8 +186,8 @@
                 <p class="hostels-card-type">Гостиница</p>
                 <p class="product-card-price">От 1500 ₽</p>
                 <a class="product-card-button" href="#">Подробнее</a>
-                <a class="product-card-button button" href="#">В избранное</a>
-                <p class="product-card-button rating">Рейтинг: 5,0</p>
+                <a class="product-card-button-favorites" href="#">В избранное</a>
+                <p class="product-card-button-rating">Рейтинг: 5,0</p>
               </li>
             </ul>
             <ul class="pagination">
@@ -213,13 +218,13 @@
                 <a class="dropdown-item" href="#">6</a>
             </details>
         </section>
-      <section class="newsletter">
+      <section class="newsletter-catalog">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="page-footer-title-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
-          <button class="button newsletter-button" type="submit">
+          <button class="button-newsletter-button" type="submit">
             <span class="visually-hidden">Подписаться</span>
           </button>
         </form>
