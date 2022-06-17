@@ -14,7 +14,22 @@
   font-display: swap;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+
+html {
+  height: 100%;
+}
+
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -27,13 +42,32 @@ body {
   background-color: #FFFFFF;
 }
 
+.navigation {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+
+}
 .navigation-link {
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   color: #000000;
   text-decoration: none;
- }
+
+}
 
 .button-sedona {
   background: #756157;
@@ -49,12 +83,35 @@ body {
   background-size: 160px 37px;
 }
 
- .main-index {
-  background-color: #FFFFFF;
-  background-image: url("../images/index/index-background.jpg");
+.main-container {
+  flex-grow: 1;
+}
+
+.main-index {
+
   background-size: 1200px 485px;
   background-repeat: no-repeat;
-  -position: bottom, top;
+  position: bottom, top;
+
+}
+
+.welcome-logo {
+  background-color: #b0c1e6;
+  background-image: url("../images/index/index-background.jpg");
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-sedona {
+  display: block;
+  margin:  auto;
+  padding-top: 51px;
+  padding-right: 371px;
+  padding-bottom: 82px;
+  padding-left: 371px;
 
 }
 
@@ -65,14 +122,39 @@ body {
   text-transform: uppercase;
   color: #000000;
   font-weight: 700;
+  padding-top: 63px;
+  padding-right: 290px;
+  padding-bottom: 31px;
+  padding-left: 290px;
 }
 
 .about-sedona-sedona {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-
+  padding-top: 29px;
+  padding-right: 304px;
+  padding-bottom: 56px;
+  padding-left: 209px;
 }
+
+
+.facts {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.facts-item.facts-item-wide {
+  flex-basis: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+
 
 .facts-item-sedona {
   font-size: 24px;
@@ -80,12 +162,132 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
 }
+
+.facts-item-sedona-sedona {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #82B3D3;
+  background-size: 400px 384px;
+  list-style: none;
+  flex-wrap: wrap;
+  flex-basis: 400px;
+  flex-grow: 0;
+
+}
+
+
+
+.advantages-list {
+  display: flex;
+  padding: 0;
+
+
+
+}
+
+.advantages-title-house {
+  margin: 0;
+  background-color: #F2F2F2;
+  min-width: 400px;
+  min-height: 384px;
+  max-width: 400px;
+  max-height: 384px;
+  text-align: center;
+  padding: 0;
+
+}
+
+.advantages-title-food {
+  margin: 0;
+  background-color: #c6deeeb1;
+  min-width: 400px;
+  min-height: 384px;
+  max-width: 400px;
+  max-height: 384px;
+  text-align: center;
+  padding: 0;
+
+}
+
+.advantages-title-souvenirs {
+  margin: 0;
+  background-color: #F2F2F2;;
+  min-width: 400px;
+  min-height: 384px;
+  max-width: 400px;
+  max-height: 384px;
+  text-align: center;
+  padding: 0;
+}
+
+.most {
+
+  background: #82B3D3;
+  background-size: 400px 384px;
+  min-width: 400px;
+  min-height: 384px;
+  margin: 0;
+  flex-wrap: wrap;
+  flex-basis: 400px;
+  flex-grow: 1;
+
+}
+
+.facts-sedona {
+  display: flex;
+}
+
+
+.facts-item {
+  flex-basis: calc(100% / 3);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-sedona {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.facts-item-3 {
+  background-color: #F2F2F2;
+  margin: 0;
+
+  text-align: center;
+  padding: 0;
+
+}
+
+.facts-item-4 {
+  background-color: #c6deeeb1;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  
+}
+
+.facts-item-5 {
+
+  background-color: #F2F2F2;;
+  margin: 0;
+  margin: 0;
+  min-width: 400px;
+  min-height: 384px;
+  text-align: center;
+  padding: 0;
+  flex-grow: 1;
+}
+
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  display: flex;
 }
 
 .button-search {
@@ -102,6 +304,9 @@ body {
 
 
 
+
+
+
 }
 
 
@@ -112,6 +317,9 @@ body {
   color: #FFFFFF;
   width: 100% auto;
   min-height: 411px;
+  padding: 0;
+  margin: 0;
+  background-color: #b0c1e6;
 
 }
 
@@ -121,7 +329,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-
+  padding: 94px 398px 29px 394px;
 }
 
 .page-footer-title-info {
@@ -129,6 +337,7 @@ body {
   line-height: 26px
   text-align: center;
   font-weight: 400;
+  padding: 0px 362px 0px 363px;
 }
 
 .facts-item {
@@ -171,7 +380,16 @@ body {
   text-transform: uppercase;
 }
 
+.footer-social {
+  display: flex;
+flex-direction: row;
+align-items:center;
 
+position: relative;
+
+
+
+}
 .footer-contacts-phone {
   font-style: normal;
   font-size: 40px;
@@ -179,12 +397,24 @@ body {
   text-align: center;
   color: #000000;
   text-decoration-line: none;
+padding: 0;
 }
 
+.logo-html {
+  padding: 0;
+  text-align: center;
+  display: block;
+  margin:  auto;
+  padding-top: 49px;
+  padding-right: 70px;
+  padding-bottom: 38px;
+  padding-left: 700px;
+}
 .hotels-sedona {
+  background-color: #82B3D3;
   background-image: url("../images/catalog/filter.jpg");
   background-repeat: no-repeat;
-  background-size: 1500px 1000px;
+  background-size: cover;
 
 }
 
@@ -200,6 +430,32 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+  display: flex;
+
+}
+
+.catalog-hotels {
+  display: flex;
+
+}
+
+
+.catalog {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+}
+
+.hotels-list {
+  width: 1089px;
+
+
+}
+
+.pagination {
+  display: flex;
+
 }
 
 .catalog-filter-title {
@@ -220,7 +476,23 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
+  float: left;
+  width: 170px;
+  border: 0;
+  margin: 0;
+  display: flex;
+  padding-top: 30px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+  padding-left: 70px;
 }
+
+.button-sbros {
+  width: 65px;
+  height: 20px;
+
+}
+
 
 .button-apply {
   background: #82B3D3;
@@ -232,6 +504,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
+
 }
 
 .found-hostels {
@@ -318,4 +591,21 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+
+.search {
+  background: #FFFFFF;
+width: 1200px;
+height: 417px;
+padding: 0;
+margin: 0;
+}
+
 
