@@ -566,6 +566,12 @@ body {
 
 }
 
+
+.pagination-current {
+  color: #242424;
+  background-color: #F2F2F2;
+}
+
 .hostels-total {
   margin-left: 270px;
   margin-right: 71px;
