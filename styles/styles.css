@@ -115,7 +115,7 @@ body {
   padding: 9px 15px 8px 15px;
   width: 160px;
   height: 37px;
-  
+
 }
 
 .main-container {
@@ -135,7 +135,17 @@ body {
   background-color: #b0c1e6;
   background-image: url("../images/index/index-background.jpg");
 
+
+
 }
+
+
+.welcome-block-bottom {
+  background-image: url("/images/index/Vector.svg")
+
+
+}
+
 
 
 .page-container {
@@ -150,6 +160,8 @@ body {
   padding-right: 371px;
   padding-bottom: 82px;
   padding-left: 371px;
+
+
 
 }
 
@@ -173,7 +185,8 @@ body {
   padding-top: 29px;
   padding-right: 304px;
   padding-bottom: 56px;
-  padding-left: 209px;
+  padding-left: 304px;
+
 }
 
 
@@ -183,6 +196,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+}
+
+
+.facts-1 {
+  width: 230px;
+  height: 21px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+
+
 }
 
 .facts-item.facts-item-wide {
@@ -199,10 +226,22 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 80px;
-
+  margin: 182px 85px 30px 85px;
 
 }
+
+.facts-item-sedona-2 {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 103px 85px 30px 85px;
+  width: 230px;
+  height: 56px;
+
+}
+
 
 .facts-item-sedona-sedona {
   margin: 0;
@@ -237,11 +276,17 @@ body {
   min-width: 400px;
   min-height: 384px;
   max-width: 400px;
-  max-height: 384px;
-  text-align: center;
   padding: 0;
+  background-image: url("../images/index/жилье.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left calc(50% - 75px/2 + 37px) top calc(50% - 150px/2);
+
+
 
 }
+
+
 
 .advantages-title-food {
   margin: 0;
@@ -252,6 +297,10 @@ body {
   max-height: 384px;
   text-align: center;
   padding: 0;
+  background-image: url("../images/index/food.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left calc(50% - 75px/2 + 37px) top calc(50% - 150px/2);
 
 }
 
@@ -264,6 +313,10 @@ body {
   max-height: 384px;
   text-align: center;
   padding: 0;
+  background-image: url("../images/index/сувениры.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left calc(50% - 75px/2 + 37px) top calc(50% - 150px/2);
 }
 
 .most {
@@ -277,7 +330,7 @@ body {
   flex-basis: 400px;
   flex-grow: 1;
   color: #FFFFFF;
-
+  text-align: center;
 }
 
 .facts-sedona {
@@ -292,6 +345,10 @@ body {
   color: #FFFFFF;
   margin-top: 92px;
   margin-bottom: 30px;
+  width: 230px;
+  height: 56px;
+  margin-left: 85px;
+
 
 }
 
@@ -306,14 +363,16 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
+
 }
 
 .facts-item-3 {
   background-color: #F2F2F2;
-  margin: 0;
+  margin: 0px;
   text-align: center;
   padding: 0;
   width: 400px;
+  height: 384px;
 
 }
 
@@ -323,18 +382,17 @@ body {
   text-align: center;
   padding: 0;
   width: 400px;
+  height: 384px;
+
 }
 
 .facts-item-5 {
   width: 400px;
   background-color: #F2F2F2;;
   margin: 0;
-  margin: 0;
-  min-width: 400px;
-  min-height: 384px;
   text-align: center;
   padding: 0;
-  flex-grow: 1;
+  height: 384px;
 }
 
 
@@ -343,7 +401,12 @@ body {
   line-height: 21px;
   text-align: center;
   display: flex;
+  margin: 30px 85px 81px 85px;
+  padding: 0;
+
 }
+
+
 
 .button-search {
   background: #756157;
@@ -392,9 +455,11 @@ body {
 .page-footer-title-info {
   font-size: 22px;
   line-height: 26px
-  text-align: center;
   font-weight: 400;
-  padding: 0px 362px 0px 363px;
+  padding: 0px 362px 46px 363px;
+  text-align: center;
+  margin: 0px;
+
 }
 
 .facts-item {
@@ -440,14 +505,13 @@ body {
 
 }
 
-.footer-social {
+.page-footer {
   display: flex;
   flex-direction: row;
   align-items:center;
   position: relative;
   margin: 0px;
   padding: 0px;
-  list-style-type: none;
   width: 48px;
   height: 40px;
   flex-wrap: wrap;
