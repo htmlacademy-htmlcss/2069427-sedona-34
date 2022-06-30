@@ -53,38 +53,85 @@ body {
   background-color: #FFFFFF;
 }
 
+
+.logo {
+
+  margin: 0px 20px 0px 70px;
+
+
+}
+
 .navigation {
   width: 1200px;
   margin: 0 auto;
   display: flex;
+  padding: 0;
+
 }
 
+
 .navigation-list {
-  margin: 0;
+  margin-left: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
   padding: 0;
-  width: 1200px;
+  max-width: 1200px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-
+  margin-right: 0px;
 
 }
 
 
+.navigation-user .navigation-item:nth-child(1) .navigation-link {
+  background-image: url("../images/index/search.svg");
+  background-repeat: no-repeat;
+  margin: 23px 23px 23px 0px;
+
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link {
+  background-image: url("../images/index/favorite.svg");
+  background-repeat: no-repeat;
+  margin: 23px 32px 23px 0;
+
+}
 
 
 .navigation-user {
-  max-width: 300px;
-  margin-left: auto;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.navigation-link-1 {
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding-top: 20px;
+  padding-left: 47px;
 
 }
 
-.navigation-list .navigation-user {
-  min-width: 42px;
-  min-height: 66px;
+
+.navigation-link-3 {
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding-top: 20px;
+  padding-right: 311px;
+  padding-left: 34px;
 
 }
-
 
 .navigation-link {
   line-height: 26px;
@@ -95,7 +142,7 @@ body {
   display: block;
   padding-top: 20px;
   padding-left: 34px;
-
+  margin: 0;
 
 }
 
@@ -106,16 +153,13 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  background-size: 160px 37px;
-  margin: 14px 70px 14px 0px;
-  padding: 9px 15px 8px 15px;
   width: 160px;
   height: 37px;
-
+  padding: 0px;
+  margin: 14px 0px 14px 0px;
 }
 
 .main-container {
@@ -140,11 +184,8 @@ body {
 }
 
 
-.welcome-block-bottom {
-  background-image: url("/images/index/Vector.svg")
 
 
-}
 
 
 
@@ -164,6 +205,10 @@ body {
 
 
 }
+
+
+
+
 
 .about-sedona {
   font-size: 30px;
