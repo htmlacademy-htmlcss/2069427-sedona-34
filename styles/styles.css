@@ -177,12 +177,23 @@ body {
 
 .welcome-logo {
   background-color: #b0c1e6;
-  background-image: url("../images/index/index-background.jpg");
-
-
+  background-image: url("../images/index/vector.svg") , url("../images/index/index-background.jpg");
+  position:relative;
+  background-repeat: no-repeat;
+  background-position: bottom, center;
 
 }
 
+
+.logo-sedona {
+  display: block;
+  margin:  0;
+  padding-top: 51px;
+  padding-right: 371px;
+  padding-bottom: 82px;
+  padding-left: 371px;
+
+}
 
 
 
@@ -193,19 +204,6 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-
-.logo-sedona {
-  display: block;
-  margin:  auto;
-  padding-top: 51px;
-  padding-right: 371px;
-  padding-bottom: 82px;
-  padding-left: 371px;
-
-
-
-}
-
 
 
 
@@ -261,6 +259,7 @@ body {
   display: grid;
   grid-template-columns: 400px 800px ;
   justify-self: start;
+
 }
 
 
@@ -371,9 +370,9 @@ body {
   min-width: 400px;
   min-height: 384px;
   margin: 0;
-  flex-wrap: wrap;
+
   flex-basis: 400px;
-  flex-grow: 1;
+  flex-grow: 0;
   color: #FFFFFF;
   text-align: center;
 }
@@ -488,6 +487,64 @@ body {
 
 }
 
+.page-footer {
+  display: flex;
+  width: 1200px;
+}
+
+
+.footer-social-item {
+  list-style-type: none;
+  flex-wrap: wrap;
+
+
+}
+
+
+
+
+.footer-social-link {
+  display: block;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 17px;
+  width: 47px;
+  height: 40px;
+}
+
+.footer-social {
+  margin: 5px ;
+  max-width: 141px;
+  padding: 45px 0px 35px 70px;
+}
+
+
+.footer-social-vk {
+  background-image: url("../images/index/vk.svg");
+
+}
+
+.footer-social-tm {
+  background-image: url("../images/index/teleg.svg");
+
+}
+
+.footer-social-yt {
+  background-image: url("../images/index/youtube.svg");
+
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+
+}
+
 .page-footer-title {
   font-weight: 700;
   font-size: 30px;
@@ -550,19 +607,11 @@ body {
 
 }
 
-.page-footer {
+.footer-contacts {
   display: flex;
-  flex-direction: row;
-  align-items:center;
-  position: relative;
-  margin: 0px;
-  padding: 0px;
-  width: 48px;
-  height: 40px;
-  flex-wrap: wrap;
-
 
 }
+
 .footer-contacts-phone {
   font-style: normal;
   font-size: 40px;
@@ -570,14 +619,24 @@ body {
   text-align: center;
   color: #000000;
   text-decoration-line: none;
-  padding: 0;
+  padding: 45px 0px 45px 0px;
+  margin: 5px;
+  width: 720px;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+
+
 }
 
 .logo-html {
-  margin-left: 1015px;
-  margin-bottom: 38px;
-  margin-top: 0;
+ margin: 9px 0px 8px 0px;
+ padding: 40px 70px 30px 0px;
+
 }
+
+
+
 .hotels-sedona {
   background-color: #82B3D3;
   background-image: url("../images/catalog/filter.jpg");
